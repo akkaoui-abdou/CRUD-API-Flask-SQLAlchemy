@@ -1,7 +1,7 @@
 from flask import request, jsonify
-from models import User
+from models import db, User  # Import the db instance and models
 import uuid
-from app import db
+#from app import db
 
 
 def create_user_controller():
@@ -19,7 +19,7 @@ def create_user_controller():
 
     response = User.query.get(id).toDict()
     return jsonify(response)
-    
+
 def list_all_user_controller():
 
     users = User.query.all()
