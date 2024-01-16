@@ -66,6 +66,24 @@
 
     pip freeze > requirements.txt
 
+# Using env variable
+
+    import os
+    from dotenv import load_dotenv
+
+    load_dotenv()
+
+    GCP_PROJECT_ID = os.getenv('GCP_PROJECT_ID')
+    SERVICE_ACCOUNT_FILE = os.getenv('SERVICE_ACCOUNT_FILE')
+    STORAGE_BUCKET_NAME = os.getenv('STORAGE_BUCKET_NAME')
+
+
+
+# Instegrate JWTManager
+
+### Install package 
+
+    pip install flask-jwt-extended
 
 
 Source:
@@ -78,3 +96,12 @@ https://medium.com/@yahiaqous/how-to-build-a-crud-api-using-python-flask-and-sql
 https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_adding_objects.htm
 https://flask.palletsprojects.com/en/3.0.x/tutorial/factory/
 https://medium.com/@pooya.oladazimi/flask-app-postgres-database-initialization-step-by-step-guide-with-models-7bd251504c3e
+
+
+### Implement a simple JWT with Flask
+
+https://4geeks.com/lesson/what-is-JWT-and-how-to-implement-with-Flask
+
+https://ankushkunwar7777.medium.com/flask-jwt-extended-explanation-aa7b8660c8bb
+
+https://github.com/vimalloc/flask-jwt-extended/blob/master/examples/simple.py
