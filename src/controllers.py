@@ -1,7 +1,30 @@
 from flask import request, jsonify
 from models import db, User  # Import the db instance and models
 import uuid
-#from app import db
+from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
+
+def register_user_controller():
+    data = request.get_json()
+    new_user = User(username=data['username'], password=data['password'], email=data['email'])
+    db.session.add(new_user)
+    db.session.commit()
+    return jsonify(message='User created successfully'), 201
+
+
+def login_user_controller():
+    data = request.get_json()
+    user = User.query.filter_by(username=data['username']).first()
+
+    if user and user.password == data['password']:
+        access_token = create_access_token(identity=user.id)
+        return jsonify(access_token=access_token), 200
+    else:
+        return jsonify(message='Invalid credentials'), 401
+
+
+def protected_user_controller():
+    current_user = get_jwt_identity()
+    return jsonify(logged_in_as=current_user), 200
 
 
 def create_user_controller():

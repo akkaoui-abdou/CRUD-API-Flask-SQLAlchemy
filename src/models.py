@@ -1,8 +1,8 @@
 
  # encoding: utf-8
-from sqlalchemy import ForeignKeyConstraint
+from sqlalchemy import ForeignKeyConstraint, DateTime
 from flask_sqlalchemy import SQLAlchemy
-
+from datetime import datetime
 db = SQLAlchemy()
 
 class User(db.Model):
@@ -11,17 +11,18 @@ class User(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
+    password = db.Column(db.String(120), nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
-    created_at = db.Column(db.Date, nullable=False)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.now)
+    updated_at = db.Column(db.DateTime, default=datetime.now, onupdate=datetime.now)
     role = db.Column(db.String(), default="employee")    
 
 
-    def __init__(self, username, created_at, role):
+    def __init__(self, username, password, email):
         self.username = username        
-        self.created_at = created_at        
-        self.role = role
+        self.password = password        
+        self.email = email
     
-
 
     def register_user_if_not_exist(self):        
         db_user = User.query.filter(User.username == self.username).all()
