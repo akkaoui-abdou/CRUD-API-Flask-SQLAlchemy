@@ -105,3 +105,8 @@ https://4geeks.com/lesson/what-is-JWT-and-how-to-implement-with-Flask
 https://ankushkunwar7777.medium.com/flask-jwt-extended-explanation-aa7b8660c8bb
 
 https://github.com/vimalloc/flask-jwt-extended/blob/master/examples/simple.py
+
+
+## Repo Flask and SQLAlchemi
+
+https://github.com/Pooya-Oladazimi/flask-cool-app
