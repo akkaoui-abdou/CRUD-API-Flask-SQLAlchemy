@@ -1,5 +1,5 @@
 from flask import request, jsonify, Blueprint
-from controllers import register_user_controller,login_user_controller, protected_user_controller, create_user_controller, list_all_user_controller
+from src.controllers import register_user_controller,login_user_controller, protected_user_controller, create_user_controller, list_all_user_controller
 from flask_jwt_extended import jwt_required, get_jwt_identity
 
 bp_user = Blueprint('user', __name__)

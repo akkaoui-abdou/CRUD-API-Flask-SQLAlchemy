@@ -85,6 +85,17 @@
 
     pip install flask-jwt-extended
 
+# Run flask
+    flask run -h 127.0.0.2 -p 5001
+
+
+# Migrate the new database models with these commands:
+
+    flask db init
+    flask db migrate
+    flask db upgrade
+
+
 
 Source:
 
@@ -110,3 +121,7 @@ https://github.com/vimalloc/flask-jwt-extended/blob/master/examples/simple.py
 ## Repo Flask and SQLAlchemi
 
 https://github.com/Pooya-Oladazimi/flask-cool-app
+
+## Test
+
+https://stackoverflow.com/questions/75523569/runtimeerror-a-sqlalchemy-instance-has-already-been-registered-on-this-flask

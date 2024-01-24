@@ -1,5 +1,5 @@
 from flask import request, jsonify
-from models import db, User  # Import the db instance and models
+from src.models import db, User  # Import the db instance and models
 import uuid
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 
