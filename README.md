@@ -59,16 +59,29 @@
 
 # Activate Virtual Environment
 
-    $ source bin/activate
+    $ source env/bin/activate
 
 
 # Install the Project Dependencies
 
-    pip install -U Flask-SQLAlchemy psycopg2-binary
+    pip install -U flask Flask-SQLAlchemy psycopg2-binary Flask-JWT-Extended python-dotenv Flask-Migrate
 
 # create a requirements file using this command:
 
     pip freeze > requirements.txt
+
+
+# Writing the Project Code
+
+        └── src
+            ├── app.py
+            ├── config.py
+            ├── controllers.py
+            ├── __init__.py
+            ├── models.py
+            └── urls.py
+
+
 
 # Using env variable
 
