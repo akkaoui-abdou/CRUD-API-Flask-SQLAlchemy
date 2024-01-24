@@ -1,6 +1,6 @@
 
  # encoding: utf-8
-from sqlalchemy import ForeignKeyConstraint, DateTime
+from sqlalchemy import ForeignKeyConstraint, DateTime, inspect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 db = SQLAlchemy()

@@ -93,6 +93,29 @@
     flask db migrate
     flask db upgrade
 
+# Send Requests Using Postman
+
+1. Post new User:
+
+Request Method: POST
+Request Link: http://127.0.0.2:5001/api/user
+Body Data in form-data:
+{
+    "username":"akkaoui",
+    "password":"OLEm#-!",
+    "email":"email@gmail.com"
+}
+
+![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/register_user.png)
+
+
+2. List All Users:
+
+Request Method: GET
+Request Link: http://127.0.0.2:5001/api/user
+
+
+![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/CreateNewUser.png)
 
 
 Source:
@@ -123,3 +146,7 @@ https://github.com/Pooya-Oladazimi/flask-cool-app
 ## Test
 
 https://stackoverflow.com/questions/75523569/runtimeerror-a-sqlalchemy-instance-has-already-been-registered-on-this-flask
+
+## Commands PosgreSQL
+
+https://stackoverflow.com/questions/769683/how-to-show-tables-in-postgresql
