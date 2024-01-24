@@ -95,11 +95,12 @@
 
 # Send Requests Using Postman
 
-1. Post new User:
+### 1. Post new User:
 
-Request Method: POST
-Request Link: http://127.0.0.2:5001/api/user
-Body Data in form-data:
+- Request Method: POST
+- Request Link: http://127.0.0.2:5001/api/user
+- Body Data in form-data:
+
 {
     "username":"akkaoui",
     "password":"OLEm#-!",
@@ -109,10 +110,10 @@ Body Data in form-data:
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/register_user.png)
 
 
-2. List All Users:
+### 2. List All Users:
 
-Request Method: GET
-Request Link: http://127.0.0.2:5001/api/user
+- Request Method: GET
+- Request Link: http://127.0.0.2:5001/api/user
 
 
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/CreateNewUser.png)
