@@ -3,7 +3,7 @@
 
 ### In this tutorial, you will learn how to build a simple CRUD API using Flask, SQLAlchemy, and PostgreSQL.
 
-![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/images/Flask-SQLAlchemi-PosgreSQL.png)
+![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/Flask-SQLAlchemi-PosgreSQL.png)
 
 # Create PostgreSQL Database
 
