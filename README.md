@@ -131,7 +131,7 @@
 ### 4. Put a Specific Account:
 
 - Request Method: PUT
-- Request Link: http://localhost:5000/accounts/ACCOUNT_ID
+- Request Link: http://127.0.0.2:5001/api/user/1
 - Body Data in form-data:
 
 {
@@ -140,6 +140,22 @@
 }
 
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/UpdateSpecificUser.png)
+
+
+### 4. Delete a Specific Account:
+
+- Request Method: DELETE
+- Request Link: http://127.0.0.2:5001/api/user/1
+- Body Data in form-data:
+
+{
+    "email": "akkaoui@gmail.com",
+    "role": "Senior Sofware Engineer"
+}
+
+![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/DeleteSpecificUser.png)
+
+
 
 Source:
 
