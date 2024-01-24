@@ -61,14 +61,15 @@ def retrieve_user_controller(user_id):
 
 
 def update_user_controller(user_id):
-    request_form = request.form.to_dict()
+    #request_form = request.form.to_dict()
+    request_form = request.get_json()
+    
     user = User.query.get(user_id)
 
     user.email        = request_form['email']
-    user.username     = request_form['username']
-    user.dob          = request_form['dob']
-    user.country      = request_form['country']
-    user.phone_number = request_form['phone_number']
+    #user.username     = request_form['username']
+    #user.password     = request_form['password']
+    user.role      = request_form['role']
     db.session.commit()
 
     response = User.query.get(user_id).toDict()
