@@ -101,11 +101,13 @@
 - Request Link: http://127.0.0.2:5001/api/user
 - Body Data in form-data:
 
+```
 {
     "username":"akkaoui",
     "password":"OLEm#-!",
     "email":"email@gmail.com"
 }
+```
 
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/register_user.png)
 
@@ -134,11 +136,12 @@
 - Request Link: http://127.0.0.2:5001/api/user/1
 - Body Data in form-data:
 
+```
 {
     "email": "akkaoui@gmail.com",
     "role": "Senior Sofware Engineer"
 }
-
+```
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/UpdateSpecificUser.png)
 
 
@@ -146,12 +149,7 @@
 
 - Request Method: DELETE
 - Request Link: http://127.0.0.2:5001/api/user/1
-- Body Data in form-data:
 
-{
-    "email": "akkaoui@gmail.com",
-    "role": "Senior Sofware Engineer"
-}
 
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/DeleteSpecificUser.png)
 
