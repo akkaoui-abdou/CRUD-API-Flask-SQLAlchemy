@@ -66,7 +66,7 @@
 
     pip install -U flask Flask-SQLAlchemy psycopg2-binary Flask-JWT-Extended python-dotenv Flask-Migrate
 
-# create a requirements file using this command:
+# Create a requirements file using this command:
 
     pip freeze > requirements.txt
 
@@ -153,37 +153,3 @@
 
 ![alt text](https://github.com/akkaoui-abdou/CRUD-API-Flask-SQLAlchemy/blob/main/imges/DeleteSpecificUser.png)
 
-
-
-Source:
-
-https://pypi.org/project/Flask-SQLAlchemy/
-https://flask-sqlalchemy.palletsprojects.com/en/2.x/quickstart/
-https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/#install-requirements
-https://realpython.com/flask-by-example-part-2-postgres-sqlalchemy-and-alembic/
-https://medium.com/@yahiaqous/how-to-build-a-crud-api-using-python-flask-and-sqlalchemy-orm-with-postgresql-7869517f8930
-https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_orm_adding_objects.htm
-https://flask.palletsprojects.com/en/3.0.x/tutorial/factory/
-https://medium.com/@pooya.oladazimi/flask-app-postgres-database-initialization-step-by-step-guide-with-models-7bd251504c3e
-
-
-### Implement a simple JWT with Flask
-
-https://4geeks.com/lesson/what-is-JWT-and-how-to-implement-with-Flask
-
-https://ankushkunwar7777.medium.com/flask-jwt-extended-explanation-aa7b8660c8bb
-
-https://github.com/vimalloc/flask-jwt-extended/blob/master/examples/simple.py
-
-
-## Repo Flask and SQLAlchemi
-
-https://github.com/Pooya-Oladazimi/flask-cool-app
-
-## Test
-
-https://stackoverflow.com/questions/75523569/runtimeerror-a-sqlalchemy-instance-has-already-been-registered-on-this-flask
-
-## Commands PosgreSQL
-
-https://stackoverflow.com/questions/769683/how-to-show-tables-in-postgresql
